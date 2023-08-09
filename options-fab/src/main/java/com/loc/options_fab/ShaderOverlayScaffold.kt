@@ -1,4 +1,4 @@
-package com.example.optionsfloatingactionbutton
+package com.loc.options_fab
 
 import android.util.Log
 import androidx.compose.foundation.background

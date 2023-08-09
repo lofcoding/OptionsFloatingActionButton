@@ -29,6 +29,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.optionsfloatingactionbutton.ui.theme.OptionsFloatingActionButtonTheme
+import com.loc.options_fab.InteractiveFloatingActionButton
+import com.loc.options_fab.ShaderOverlayScaffold
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)

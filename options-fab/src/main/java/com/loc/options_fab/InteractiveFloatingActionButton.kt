@@ -1,4 +1,4 @@
-package com.example.optionsfloatingactionbutton
+package com.loc.options_fab
 
 import android.util.Log
 import androidx.annotation.DrawableRes
@@ -46,10 +46,8 @@ import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.optionsfloatingactionbutton.ui.theme.OptionsFloatingActionButtonTheme
 
 data class FloatingActionButtonOption(
     @DrawableRes val icon: Int,
@@ -66,32 +64,7 @@ data class FloatingActionButtonSizes(
 
 val blue = Color(0xFF1982DD)
 
-val floatingActionButtonOptions = listOf(
-    FloatingActionButtonOption(
-        icon = R.drawable.ic_share,
-        text = "Share",
-        tintColor = blue,
-        containerColor = Color.White,
-        textColor = Color.White
-    ),
-    FloatingActionButtonOption(
-        icon = R.drawable.ic_photo,
-        text = "Photos",
-        tintColor = blue,
-        containerColor = Color.White,
-        textColor = Color.White
-    ),
 
-    FloatingActionButtonOption(
-        icon = R.drawable.ic_gif,
-        text = "Gif",
-        tintColor = blue,
-        containerColor = Color.White,
-        textColor = Color.White
-    ),
-)
-
-@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun InteractiveFloatingActionButton(
     modifier: Modifier = Modifier,
@@ -245,25 +218,4 @@ fun AnimatedFloatingActionButton(
         }
     }
 
-}
-
-@Preview
-@Composable
-fun InteractiveFloatingActionButtonIntrview() {
-    OptionsFloatingActionButtonTheme {
-        var showOptions by remember {
-            mutableStateOf(true)
-        }
-        InteractiveFloatingActionButton(
-            mainIcon = R.drawable.ic_add,
-            mainIconAlternative = R.drawable.ic_tweet,
-            mainText = "Tweet",
-            options = floatingActionButtonOptions,
-            onMainIconClick = {
-                showOptions = !showOptions
-            },
-            showOptions = showOptions,
-            onOptionClick = {}
-        )
-    }
 }

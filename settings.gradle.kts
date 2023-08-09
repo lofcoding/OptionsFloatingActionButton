@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "OptionsFloatingActionButton"
 include(":app")
- 
+include(":OptionsFloatingActionButton")
+include(":options-fab")
