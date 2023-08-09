@@ -68,6 +68,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     implementation ("androidx.compose.foundation:foundation:1.4.3")
-    implementation(project(":options-fab"))
+//    implementation("com.github.lofcoding:OptionsFloatingActionButton:1.0")
 
 }

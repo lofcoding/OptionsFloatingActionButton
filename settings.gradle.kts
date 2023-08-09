@@ -3,6 +3,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven("https://jitpack.io")
     }
 }
 dependencyResolutionManagement {
@@ -17,3 +18,4 @@ rootProject.name = "OptionsFloatingActionButton"
 include(":app")
 include(":OptionsFloatingActionButton")
 include(":options-fab")
+

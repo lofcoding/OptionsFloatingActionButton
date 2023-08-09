@@ -48,10 +48,11 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.lofcoding"
-            artifactId = "options-fab"
+            groupId = "org.gradle.sample"
+            artifactId = "library"
             version = "1.1"
-            from(components.findByName("java"))
+
+            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
         }
     }
 }
